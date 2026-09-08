@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Putri Fisichella Chasannove — Portofolio Front-End Developer</title>
+<meta name="description" content="Portofolio Putri Fisichella Chasannove, Front-End Developer dengan latar belakang Informatika, memadukan pemikiran UI/UX dengan pengembangan web secara praktis.">
+
+<meta property="og:title" content="Putri Fisichella Chasannove — Portofolio Front-End Developer">
+<meta property="og:description" content="Front-End Developer yang membangun antarmuka web yang bersih, responsif, dan dipikirkan dengan matang.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/foto_formal.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Langsung ke konten</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#top" class="navbar__logo" aria-label="Kembali ke atas">PF<span>.</span></a>
+
+    <nav class="navbar__links" aria-label="Navigasi utama">
+      <a href="#about" data-nav>Tentang</a>
+      <a href="#skills" data-nav>Keahlian</a>
+      <a href="#projects" data-nav>Proyek</a>
+      <a href="#experience" data-nav>Pengalaman</a>
+      <a href="#contact" data-nav>Kontak</a>
+      <a href="assets/cv/putri-fisichella-cv.pdf" class="navbar__resume" download>CV</a>
+    </nav>
+
+    <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu mobile" hidden>
+    <a href="#about" data-nav>Tentang</a>
+    <a href="#skills" data-nav>Keahlian</a>
+    <a href="#projects" data-nav>Proyek</a>
+    <a href="#experience" data-nav>Pengalaman</a>
+    <a href="#contact" data-nav>Kontak</a>
+    <a href="assets/cv/putri-fisichella-cv.pdf" download>Unduh CV</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Halo, saya Putri</p>
+        <h1 class="hero__headline">
+          Front-End Developer yang membangun responsif web design.
+        </h1>
+        <p class="hero__text">
+          Saya lulusan Informatika dari Universitas Singaperbangsa Karawang, berdomisili di Tangerang.
+          Lewat magang sebagai Web Developer di PT Vinix Seven Aurum dan beberapa proyek mandiri,
+          saya terbiasa menerjemahkan desain Figma menjadi antarmuka responsif menggunakan HTML, CSS,
+          JavaScript, Bootstrap, dan Tailwind CSS — serta menghubungkannya ke back-end dengan PHP.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">Lihat Proyek</a>
+          <a href="assets/cv/putri-fisichella-cv.pdf" class="btn btn--secondary" download>Unduh CV</a>
+        </div>
+
+        <div class="hero__social" aria-label="Tautan sosial">
+          <a href="https://github.com/putrifisichella" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/putri-fisichella" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:putrifisichella08@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="code-window">
+          <div class="code-window__bar">
+            <span></span><span></span><span></span>
+            <p>developer.js</p>
+          </div>
+          <pre class="code-window__body"><code><span class="tok-key">const</span> <span class="tok-var">developer</span> = {
+  <span class="tok-prop">nama</span>: <span class="tok-str">"Putri Fisichella"</span>,
+  <span class="tok-prop">peran</span>: <span class="tok-str">"Front-End Developer"</span>,
+  <span class="tok-prop">stack</span>: [<span class="tok-str">"HTML"</span>, <span class="tok-str">"CSS"</span>, <span class="tok-str">"JS"</span>, <span class="tok-str">"PHP"</span>],
+  <span class="tok-prop">openToWork</span>: <span class="tok-bool">true</span>,
+};</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick facts -->
+    <div class="quick-facts">
+      <div class="quick-facts__inner">
+        <div class="quick-fact">
+          <span class="quick-fact__value">S1 Informatika</span>
+          <span class="quick-fact__label">Universitas Singaperbangsa Karawang</span>
+        </div>
+        <div class="quick-fact">
+          <span class="quick-fact__value">3.76 / 4.00</span>
+          <span class="quick-fact__label">IPK</span>
+        </div>
+        <div class="quick-fact">
+          <span class="quick-fact__value">Front-End Development</span>
+          <span class="quick-fact__label">Fokus utama</span>
+        </div>
+        <div class="quick-fact">
+          <span class="quick-fact__value">Open to Work</span>
+          <span class="quick-fact__label">Tangerang · Remote / On-site</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about section--alt" id="about">
+    <div class="section__inner about__grid">
+      <h2 class="section__title">Sedikit tentang saya.</h2>
+
+      <div class="about__body">
+        <p>
+          Saya kuliah Informatika di Universitas Singaperbangsa Karawang dan lulus dengan IPK 3.76.
+          Di tengah proses belajar dasar-dasar pemrograman, saya justru tertarik pada sisi front-end —
+          bagian di mana sebuah keputusan desain dan satu baris kode harus sejalan satu sama lain.
+        </p>
+        <p>
+          Hal itu yang membentuk cara saya bekerja sekarang: saya berusaha memahami sebuah layout
+          sebelum membangunnya, dan berusaha menulis kode front-end yang benar-benar merepresentasikan
+          maksud desain, bukan sekadar pendekatannya. Selama magang di PT Vinix Seven Aurum saya ikut
+          membangun front-end platform edukasi EduTrack.id bersama tim beranggotakan tiga orang, dan
+          sebelumnya saya juga membangun sistem pendaftaran kegiatan BEM Fasilkom UNSIKA sendirian dari
+          perencanaan sampai implementasi.
+        </p>
+
+        <dl class="about__meta">
+          <div>
+            <dt>Sedang fokus pada</dt>
+            <dd>Front-End Development</dd>
+          </div>
+          <div>
+            <dt>Tertarik pada</dt>
+            <dd>Web Development</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section skills" id="skills">
+    <div class="section__inner">
+      <h2 class="section__title">Teknologi yang saya gunakan.</h2>
+
+      <div class="skills__grid">
+        <div class="skill-group">
+          <h3>Front-End</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Back-End</h3>
+          <ul>
+            <li>PHP</li>
+            <li>Laravel</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>UI/UX</h3>
+          <ul>
+            <li>Figma</li>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+            <li>UI Design</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Development Tools</h3>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>Postman</li>
+            <li>XAMPP</li>
+            <li>Laragon</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section projects section--alt" id="projects">
+    <div class="section__inner">
+      <h2 class="section__title">Proyek pilihan.</h2>
+      <p class="section__lede">Dua proyek yang pernah saya kerjakan, mulai dari antarmuka hingga implementasinya.</p>
+
+      <div class="project-list">
+
+        <!-- PROJECT 01 -->
+        <article class="project-card" data-project="bem">
+          <div class="project-card__preview">
+            <img src="assets/images/bem-event.png" alt="Pratinjau website pendaftaran kegiatan BEM FASILKOM UNSIKA" loading="lazy">
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__number">01</span>
+            <h3 class="project-card__title">Sistem Pendaftaran Online Kegiatan BEM FASILKOM UNSIKA</h3>
+            <p class="project-card__desc">
+              Website pendaftaran yang dibuat untuk membantu BEM FASILKOM UNSIKA mengelola pendaftaran
+              kegiatan secara online, dengan interface yang terstruktur dan mudah digunakan.
+            </p>
+            <ul class="project-card__stack">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li><li>MySQL</li>
+            </ul>
+            <div class="project-card__actions">
+              <button type="button" class="link-btn" data-open-case="bem">Lihat Studi Kasus</button>
+              <a href="https://github.com/Putrifisichella/bem-event" class="link-btn" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 02 -->
+        <article class="project-card" data-project="edutrack">
+          <div class="project-card__preview">
+            <img src="assets/images/edutrack.png" alt="Pratinjau portal akademik EduTrack.id" loading="lazy">
+          </div>
+          <div class="project-card__info">
+            <span class="project-card__number">02</span>
+            <h3 class="project-card__title">EduTrack.id</h3>
+            <p class="project-card__desc">
+              Portal web akademik yang dikembangkan bersama tim selama program magang, dengan fokus pada
+              penerjemahan desain UI/UX dari Figma menjadi front-end yang fungsional.
+            </p>
+            <ul class="project-card__stack">
+              <li>Figma</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li>
+            </ul>
+            <div class="project-card__actions">
+              <button type="button" class="link-btn" data-open-case="edutrack">Lihat Studi Kasus</button>
+              <a href="https://github.com/Putrifisichella/lms-edutrack.id" class="link-btn" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section process" id="process">
+    <div class="section__inner">
+      <h2 class="section__title">Bagaimana saya bekerja dari ide sampai jadi antarmuka.</h2>
+      <ol class="process__list">
+        <li><span class="process__step">01</span><span class="process__label">Research</span></li>
+        <li><span class="process__step">02</span><span class="process__label">Wireframe</span></li>
+        <li><span class="process__step">03</span><span class="process__label">UI Design</span></li>
+        <li><span class="process__step">04</span><span class="process__label">Development</span></li>
+        <li><span class="process__step">05</span><span class="process__label">Testing</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE & EDUCATION ============ -->
+  <section class="section experience section--alt" id="experience">
+    <div class="section__inner">
+      <h2 class="section__title">Pengalaman & pendidikan.</h2>
+
+      <ul class="timeline">
+        <li class="timeline__item">
+          <span class="timeline__tag">Magang</span>
+          <h3>Web Developer Intern — PT Vinix Seven Aurum</h3>
+          <p>Mei – Juni 2026. Mengembangkan front-end platform edukasi EduTrack.id bersama tim
+          beranggotakan 3 orang, mengonversi desain Figma menjadi antarmuka responsif.</p>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__tag">Pendidikan</span>
+          <h3>S1 Informatika — Universitas Singaperbangsa Karawang</h3>
+          <p>2022 – 2026. IPK 3.76 / 4.00.</p>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__tag">Organisasi</span>
+          <h3>Ketua Departemen Keilmuan — BEM Fasilkom UNSIKA</h3>
+          <p>2025. Memimpin tim dengan 3 anggota yang mempunyai 4 program kerja.</p>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__tag">Proyek Pribadi</span>
+          <h3>Digital Wedding Invitation</h3>
+          <p>2026. Website undangan pernikahan digital yang responsif, dibangun individu dari awal
+          menggunakan HTML, CSS, dan JavaScript.
+          <a href="https://github.com/Putrifisichella/champagne-vows-studio" target="_blank" rel="noopener">Lihat di GitHub</a></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ RESUME CTA ============ -->
+  <section class="section resume-cta">
+    <div class="section__inner resume-cta__inner">
+      <h2>Ingin tahu cerita lengkapnya?</h2>
+      <p>Unduh resume saya untuk gambaran lengkap tentang pendidikan dan keahlian saya.</p>
+      <!-- TODO: ganti dengan file CV asli setelah tersedia -->
+      <a href="assets/cv/putri-fisichella-cv.pdf" class="btn btn--primary" download>Unduh CV</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact section--alt" id="contact">
+    <div class="section__inner contact__grid">
+      <div>
+        <h2 class="section__title">Mari membangun sesuatu yang berarti.</h2>
+        <p class="section__lede">Terbuka untuk peluang kerja, kolaborasi, dan diskusi seputar web development.</p>
+      </div>
+
+      <ul class="contact__list">
+        <li>
+          <span class="contact__label">Email</span>
+          <a href="mailto:putrifisichella08@gmail.com">putrifisichella08@gmail.com</a>
+        </li>
+        <li>
+          <span class="contact__label">GitHub</span>
+          <a href="https://github.com/putrifisichella" target="_blank" rel="noopener">github.com/putrifisichella</a>
+        </li>
+        <li>
+          <span class="contact__label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/putri-fisichella" target="_blank" rel="noopener">linkedin.com/in/putri-fisichella</a>
+        </li>
+        <li>
+          <span class="contact__label">WhatsApp</span>
+          <a href="https://wa.me/6281908716960" target="_blank" rel="noopener">0819-0871-6960</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ CASE STUDY MODAL ============ -->
+<div class="modal" id="caseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal__backdrop" data-close-modal></div>
+  <div class="modal__panel">
+    <button type="button" class="modal__close" data-close-modal aria-label="Tutup studi kasus">&times;</button>
+    <div class="modal__content" id="modalContent">
+      <!-- Diisi oleh script.js -->
+    </div>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div>
+      <p class="footer__name">Putri Fisichella Chasannove</p>
+      <p class="footer__role">Front-End Developer / Programmer</p>
+    </div>
+    <p class="footer__copy">&copy; 2026 Putri Fisichella Chasannove. Hak cipta dilindungi.</p>
+    <div class="footer__links">
+      <a href="https://github.com/putrifisichella" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/putri-fisichella" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:putrifisichella08@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
